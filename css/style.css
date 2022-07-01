@@ -1,5 +1,10 @@
 /* COMEÇO HEADER */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 .header {
   top: 0;
   background: #d44d4d;
@@ -49,4 +54,15 @@
 /* INTRODUCAO */
 .introducao {
   padding-top: 90px;
+}
+
+/* PRATOS DA CASA */
+.pratos-casa {
+  background-color: #d44d4d;
+  height: 570px;
+  width: 800px;
+}
+
+.pratos-casa p {
+  color: #ffffff;
 }
