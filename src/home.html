@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/style.css" />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
 
   <body>
@@ -38,14 +42,21 @@
         height: 460px;
         margin-top: 84px;
       "
+      data-anime="300"
+      class="fadeInDown"
     >
       <div
         class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center"
       >
         <div>
-          <h1 class="text-8xl text-white font-extrabold">Le Restaurant</h1>
+          <h1
+            data-anime="600"
+            class="text-8xl text-white font-extrabold fadeInDown"
+          >
+            Le Restaurant
+          </h1>
 
-          <p class="text-3xl text-white">
+          <p data-anime="900" class="text-3xl text-white fadeInDown">
             O melhor centro gastronômico que você pode experenciar
           </p>
         </div>
@@ -63,5 +74,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/simple-anime.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
