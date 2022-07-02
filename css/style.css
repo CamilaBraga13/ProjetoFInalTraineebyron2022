@@ -9,7 +9,7 @@ html {
   top: 0;
   background: #d44d4d;
   width: 100%;
-  position: absolute;
+  position: sticky;
   padding: 15px 0;
   z-index: 10;
 }
@@ -65,4 +65,47 @@ html {
 
 .pratos-casa p {
   color: #ffffff;
+}
+
+.subtitulo {
+  color: #d44d4d;
+}
+
+/* JAVASCRIPT */
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #ff5f5f91;
+}
+
+.js [data-slide-nav] button.active {
+  background: #d44d4d;
 }
