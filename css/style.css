@@ -74,7 +74,7 @@ html {
 /* COMECO COMENTARIO CLIENTES */
 
 .coment {
-  margin-top: 50px;
+  margin-top: 100px;
   /* background: #00000010; */
   background: #ff5f5f6c;
   text-align: center;
@@ -116,11 +116,6 @@ html {
 }
 /* FIM FOOTER */
 
-/* INTRODUCAO */
-.introducao {
-  padding-top: 90px;
-}
-
 /* PRATOS DA CASA */
 .pratos-casa {
   background-color: #d44d4d;
@@ -134,6 +129,31 @@ html {
 
 .subtitulo {
   color: #d44d4d;
+}
+
+/* OFERTAS DO DIA */
+.pratos-oferta {
+  background-color: #ff5f5f6c;
+  height: 310px;
+}
+
+.pratos-oferta .row-span-3 {
+  height: 150px;
+}
+
+.btn {
+  color: #ff5f5f91;
+}
+
+.btn:hover {
+  color: #d44d4d;
+}
+
+/* CHAMADA APRESENTAÇÃO */
+.call-apres {
+  background-color: #d44d4d;
+  height: 400px;
+  width: 800px;
 }
 
 /* JAVASCRIPT */
@@ -155,7 +175,6 @@ html {
 .js [data-slide-nav] {
   display: block;
   text-align: center;
-  margin-bottom: 100px;
 }
 
 .js [data-slide-nav] button {
@@ -187,3 +206,15 @@ html {
   transform: none;
   transition: transform 0.8s, opacity 0.8s;
 }
+
+/* .hideContent {
+  overflow: hidden;
+  line-height: 1em;
+  height: 2em;
+}
+
+.showContent {
+  line-height: 1em;
+  height: auto;
+}
+*/
