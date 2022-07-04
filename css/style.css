@@ -9,7 +9,7 @@ html {
   top: 0;
   background: #d44d4d;
   width: 100%;
-  height: 90px;
+  position: sticky;
   padding: 15px 0;
   z-index: 10;
 }
@@ -38,7 +38,6 @@ html {
 }
 
 /* FIM HEADER */
-
 
 /* COMEÇO PONTOS DA EMPRESA */
 
@@ -82,16 +81,15 @@ html {
   text-align: center;
   padding: 50px 170px;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 20px;
 }
-
 
 /* FIM COMENTARIO CLIENTES */
 
 /* COMECO FOOTER */
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   background: #ff5f5f91;
   width: 100%;
@@ -104,19 +102,89 @@ html {
   font-size: 15px;
 }
 
-.footer p{
+.footer p {
   font-size: 13px;
 }
 
 .footer_redes ul li {
   display: inline-block;
-
 }
 
-.footer_redes ul li a{
+.footer_redes ul li a {
   border-bottom: 2px solid #000000;
   display: block;
   padding: 10px;
 }
 /* FIM FOOTER */
 
+/* INTRODUCAO */
+.introducao {
+  padding-top: 90px;
+}
+
+/* PRATOS DA CASA */
+.pratos-casa {
+  background-color: #d44d4d;
+  height: 570px;
+  width: 800px;
+}
+
+.pratos-casa p {
+  color: #ffffff;
+}
+
+.subtitulo {
+  color: #d44d4d;
+}
+
+/* JAVASCRIPT */
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #ff5f5f91;
+}
+
+.js [data-slide-nav] button.active {
+  background: #d44d4d;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
