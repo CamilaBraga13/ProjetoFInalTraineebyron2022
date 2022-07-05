@@ -1,296 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante</title>
 
-  <title>Restaurante</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
-  <link rel="stylesheet" href="../dist/output.css" />
-  <link rel="stylesheet" href="../css/normalize.css" />
-  <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="../css/grid.css" />
-  <link rel="stylesheet" href="../css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
 
-  <script>
-    document.documentElement.classList.add("js"); 
-  </script>
-</head>
+  <body>
+    <header class="header drop-shadow-lg">
+      <div class="container">
+        <a href="home.html" class="grid-4 logo">LOGO</a>
+        <nav class="grid-12 navbar">
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-
-<body>
-  <header class="header drop-shadow-lg">
-    <div class="container">
-      <a href="home.html" class="grid-4 logo">LOGO</a>
-      <nav class="grid-12 navbar">
-        <ul>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-
-
-
-  <!--INTRODUÇÃO-->
-  <div style="
+    <!--INTRODUÇÃO-->
+    <div
+      style="
         background: url(../img/prato-introducao.jpg) center no-repeat;
         width: 100%;
         background-size: cover;
         height: 460px;
-      " data-anime="300" class="fadeInDown">
-    <div class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center">
+      "
+      data-anime="300"
+      class="fadeInDown"
+    >
+      <div
+        class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center"
+      >
+        <div>
+          <h1
+            data-anime="600"
+            class="text-8xl text-white font-extrabold fadeInDown"
+          >
+            Le Restaurant
+          </h1>
+
+          <p data-anime="900" class="text-3xl text-white fadeInDown">
+            O melhor centro gastronômico que você pode experenciar
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ INTRODUÇÃO -->
+
+    <!-- Pratos da Casa -->
+    <div
+      data-anime="1200"
+      class="container flex items-center justify-center fadeInDown"
+    >
       <div>
-        <h1 data-anime="600" class="text-8xl text-white font-extrabold fadeInDown">
-          Le Restaurant
-        </h1>
+        <h2 class="mt-16 text-center font-extrabold text-4xl subtitulo">
+          Pratos do Dia
+        </h2>
 
-        <p data-anime="900" class="text-3xl text-white fadeInDown">
-          O melhor centro gastronômico que você pode experenciar
-        </p>
-      </div>
-    </div>
-  </div>
-  <!--/ INTRODUÇÃO -->
-
-  <!-- Pratos da Casa -->
-  <div data-anime="1200" class="container flex items-center justify-center fadeInDown">
-    <div>
-      <h2 class="mt-16 text-center font-extrabold text-4xl subtitulo">
-        Pratos do Dia
-      </h2>
-
-      <ul class="my-4" data-slide="pratos-do-dia">
-        <li>
-          <div class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2">
-            <div class="rounded-md truncate">
-              <img src="../img/prato01.jpg" class="w-96" />
-            </div>
-
-            <div class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4">
-              <div class="text-xl font-extrabold">Salmão grelhado</div>
-              <div class="text-m font-medium mt-2">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-                <p class="mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2">
-            <div class="rounded-md truncate">
-              <img src="../img/prato02.jpg" class="w-96" />
-            </div>
-
-            <div class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4">
-              <div class="text-xl font-extrabold">
-                Torta de Frutas Vermelhas
-              </div>
-              <div class="text-m font-medium mt-2">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-                <p class="mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2">
-            <div class="rounded-md truncate">
-              <img src="../img/prato03.jpg" class="w-96" />
-            </div>
-
-            <div class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4">
-              <div class="text-xl font-extrabold">Sanduíche Natural</div>
-              <div class="text-m font-medium mt-2">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-                <p class="mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2">
-            <div class="rounded-md truncate">
-              <img src="../img/prato04.jpg" class="w-96" />
-            </div>
-
-            <div class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4">
-              <div class="text-xl font-extrabold">Caldo de Abóbora</div>
-              <div class="text-m font-medium mt-2">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-                <p class="mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum suscipit cumque magni nemo aut ea! Nobis,
-                  pariatur accusamus? Officiis similique totam asperiores,
-                  eveniet corporis inventore ad architecto! Voluptas, minus!
-                  Exercitationem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!--/ Pratos da Casa -->
-
-  <!-- Pontos da Empresa -->
-  <div class="container pontos">
-    <div class="grid-16 titulo ">
-      <h2 class="font-extrabold">Pontos da Empresa</h2>
-    </div>
-    <div class="grid-1-3 pts">
-      <h2 class="pb-3"><b>Tradição</b></h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        at ut commodi sunt.
-      </p>
-    </div>
-    <div class="grid-1-3 pts">
-      <h2 class="pb-3"><b>Cuidado</b></h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius iste
-        suscipit reprehenderit blanditiis
-      </p>
-    </div>
-    <div class="grid-1-3 pts">
-      <h2 class="pb-3"><b>Valores</b></h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aliquam
-        ipsa molestiae porro laboriosam.
-      </p>
-    </div>
-  </div>
-  <!-- pontos empresa -->
-
-  <!-- comentarios clientes -->
-  <div class="container coment rounded-md italic mb-32">
-    <div>
-      <ul data-slide="comentarios">
-        <li>
-          <div class="grid-10">
-            <blockquote>
-              <p class="titulo-cite">
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                odit optio ipsa beatae, perspiciatis eius obcaecati atque nostrum
-                facere nisi quisquam minima aliquam error labore sint consequuntur
-                qui deleniti est."
-              </p>
-              <cite>Camila </cite>
-            </blockquote>
-          </div>
-        </li>
-        <li>
-          <div class="grid-10">
-            <blockquote>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                odit optio ipsa beatae, perspiciatis eius obcaecati atque nostrum
-                facere nisi quisquam minima aliquam error labore sint consequuntur
-                qui deleniti est."
-              </p>
-              <cite>Maria</cite>
-            </blockquote>
-          </div>
-        </li>
-        <li>
-          <div class="grid-10">
-            <blockquote>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                odit optio ipsa beatae, perspiciatis eius obcaecati atque nostrum
-                facere nisi quisquam minima aliquam error labore sint consequuntur
-                qui deleniti est."
-              </p>
-              <cite>Braga</cite>
-            </blockquote>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer.contato grid-12">
-        <h2>Nossa história:</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          nostrum molestias vero nulla aspernatur, provident ea unde repellat
-          culpa tempora eos placeat deserunt voluptate sequi aut architecto
-          praesentium autem numquam?
-        </p>
-      </div>
-      <div class="footer_redes grid-4">
-        <h2>Redes Sociais:</h2>
-        <ul>
+        <ul class="my-4" data-slide="pratos-do-dia">
           <li>
-            <a href="#"><img src="../img/redes-sociais/facebook 3.png" alt="Facebook" /></a>
+            <div
+              class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2"
+            >
+              <div class="rounded-md truncate">
+                <img src="../img/prato01.jpg" class="w-96" />
+              </div>
+
+              <div
+                class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4"
+              >
+                <div class="text-xl font-extrabold">Salmão grelhado</div>
+                <div class="text-m font-medium mt-2">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                  <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                </div>
+              </div>
+            </div>
           </li>
+
           <li>
-            <a href="#"><img src="../img/redes-sociais/instagram 1.png" alt="" /></a>
+            <div
+              class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2"
+            >
+              <div class="rounded-md truncate">
+                <img src="../img/prato02.jpg" class="w-96" />
+              </div>
+
+              <div
+                class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4"
+              >
+                <div class="text-xl font-extrabold">
+                  Torta de Frutas Vermelhas
+                </div>
+                <div class="text-m font-medium mt-2">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                  <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                </div>
+              </div>
+            </div>
           </li>
+
           <li>
-            <a href="#"><img src="../img/redes-sociais/Vector.png" alt="" /></a>
+            <div
+              class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2"
+            >
+              <div class="rounded-md truncate">
+                <img src="../img/prato03.jpg" class="w-96" />
+              </div>
+
+              <div
+                class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4"
+              >
+                <div class="text-xl font-extrabold">Sanduíche Natural</div>
+                <div class="text-m font-medium mt-2">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                  <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="pratos-casa drop-shadow-lg rounded-md w-96 grid grid-gap-4 grid-cols-2"
+            >
+              <div class="rounded-md truncate">
+                <img src="../img/prato04.jpg" class="w-96" />
+              </div>
+
+              <div
+                class="flex items-center text-right grid grid-gap-2 grid-rows-2 h-max mr-8 ml-4"
+              >
+                <div class="text-xl font-extrabold">Caldo de Abóbora</div>
+                <div class="text-m font-medium mt-2">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                  <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum suscipit cumque magni nemo aut ea! Nobis,
+                    pariatur accusamus? Officiis similique totam asperiores,
+                    eveniet corporis inventore ad architecto! Voluptas, minus!
+                    Exercitationem.
+                  </p>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
     </div>
-  </footer>
+    <!--/ Pratos da Casa -->
 
-  <script src="../js/simple-slide.js"></script>
-  <script src="../js/simple-anime.js"></script>
-  <script src="../js/script.js"></script>
-</body>
+    <!-- Pontos da Empresa -->
+    <div class="container pontos">
+      <div class="grid-16 titulo">
+        <h2>Pontos da Empresa</h2>
+      </div>
+      <div class="grid-1-3 pts">
+        <h2 class="pb-3"><b>Tradição</b></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          at ut commodi sunt.
+        </p>
+      </div>
+      <div class="grid-1-3 pts">
+        <h2 class="pb-3"><b>Cuidado</b></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius iste
+          suscipit reprehenderit blanditiis
+        </p>
+      </div>
+      <div class="grid-1-3 pts">
+        <h2 class="pb-3"><b>Valores</b></h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aliquam
+          ipsa molestiae porro laboriosam.
+        </p>
+      </div>
+    </div>
+    <!-- pontos empresa -->
 
+    <!-- comentarios clientes -->
+    <div class="container coment rounded-md italic mb-32">
+      <div>
+        <ul data-slide="comentarios">
+          <li>
+            <div class="grid-10">
+              <blockquote>
+                <p class="titulo-cite">
+                  "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae odit optio ipsa beatae, perspiciatis eius obcaecati atque
+                  nostrum facere nisi quisquam minima aliquam error labore sint
+                  consequuntur qui deleniti est."
+                </p>
+                <cite>Camila </cite>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="grid-10">
+              <blockquote>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae odit optio ipsa beatae, perspiciatis eius obcaecati atque
+                  nostrum facere nisi quisquam minima aliquam error labore sint
+                  consequuntur qui deleniti est."
+                </p>
+                <cite>Maria</cite>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="grid-10">
+              <blockquote>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae odit optio ipsa beatae, perspiciatis eius obcaecati atque
+                  nostrum facere nisi quisquam minima aliquam error labore sint
+                  consequuntur qui deleniti est."
+                </p>
+                <cite>Braga</cite>
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer.contato grid-12">
+          <h2>Nossa história:</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            nostrum molestias vero nulla aspernatur, provident ea unde repellat
+            culpa tempora eos placeat deserunt voluptate sequi aut architecto
+            praesentium autem numquam?
+          </p>
+        </div>
+        <div class="footer_redes grid-4">
+          <h2>Redes Sociais:</h2>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="../img/redes-sociais/facebook 3.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../img/redes-sociais/instagram 1.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../img/redes-sociais/Vector.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/simple-slide.js"></script>
+    <script src="../js/simple-anime.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

@@ -55,15 +55,15 @@ html {
 }
 
 .pts {
- padding: 0 20px;
- height: 150px;
- font-size: 20px ;
- font-weight: bolder;
- font-family: Arial, Helvetica, sans-serif;
- text-align: center;
- border-bottom: 2px solid #d44d4d;
- border-right: 2px solid #d44d4d;
- /* box-shadow: 3px 3px #000000 ; */
+  padding: 0 20px;
+  height: 150px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-bottom: 2px solid #d44d4d;
+  border-right: 2px solid #d44d4d;
+  /* box-shadow: 3px 3px #000000 ; */
 }
 
 .pts:hover {
@@ -86,13 +86,11 @@ html {
   margin-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
-
 }
 
-.coment blockquote{
+.coment blockquote {
   margin-bottom: 20px;
 }
-
 
 /* FIM COMENTARIO CLIENTES */
 
@@ -185,8 +183,6 @@ html {
 .js [data-slide-nav] button.active {
   background: #d44d4d;
 }
-
-
 
 .js .fadeInDown {
   transform: translate3d(0, -20px, 0);
