@@ -207,9 +207,115 @@
     </div>
     <!--/ Pratos da Casa -->
 
+    <!-- Ofertas diárias-->
+    <div class="container">
+      <h2 class="mb-6 mt-16 text-center font-extrabold text-4xl subtitulo">
+        Ofertas Especiais
+      </h2>
+
+      <div class="grid grid-cols-4 gap-6">
+        <div
+          class="grid grid-rows-6 grid-gap-2 pratos-oferta drop-shadow-lg rounded-md"
+        >
+          <div class="row-span-3 rounded-t-md truncate">
+            <img src="../img/oferta01.jpg" />
+          </div>
+          <di class="text-right mt-4 mr-4">
+            <p class="text-lg font-bold">Fettuccine alfredo</p>
+          </di>
+          <di class="text-right mt-3 mr-4">
+            <p class="text-lg font-bold line-through">R$49.99</p>
+          </di>
+          <di class="text-right mr-4">
+            <p class="text-2xl font-extrabold">R$39.99</p>
+          </di>
+        </div>
+
+        <div
+          class="grid grid-rows-6 grid-gap-2 pratos-oferta drop-shadow-lg rounded-md"
+        >
+          <div class="row-span-3 rounded-t-md truncate w-full">
+            <img src="../img/oferta02.jpg" />
+          </div>
+          <di class="text-right mt-4 mr-4">
+            <p class="text-lg font-bold">Guacamole</p>
+          </di>
+          <di class="text-right mt-3 mr-4">
+            <p class="text-lg font-bold line-through">R$39.99</p>
+          </di>
+          <di class="text-right mr-4">
+            <p class="text-2xl font-extrabold">R$34.99</p>
+          </di>
+        </div>
+
+        <div
+          class="grid grid-rows-6 grid-gap-2 pratos-oferta drop-shadow-lg rounded-md"
+        >
+          <div class="row-span-3 rounded-t-md truncate">
+            <img src="../img/oferta03.jpg" />
+          </div>
+          <di class="text-right mt-4 mr-4">
+            <p class="text-lg font-bold">Mix de frutos do mar</p>
+          </di>
+          <di class="text-right mt-3 mr-4">
+            <p class="text-lg font-bold line-through">R$64.99</p>
+          </di>
+          <di class="text-right mr-4">
+            <p class="text-2xl font-extrabold">R$59.99</p>
+          </di>
+        </div>
+
+        <div
+          class="grid grid-rows-6 grid-gap-2 pratos-oferta drop-shadow-lg rounded-md"
+        >
+          <div class="row-span-3 rounded-t-md truncate">
+            <img src="../img/oferta04.jpg" />
+          </div>
+          <di class="text-right mt-4 mr-4">
+            <p class="text-lg font-bold">Costela com fritas</p>
+          </di>
+          <di class="text-right mt-3 mr-4">
+            <p class="text-lg font-bold line-through">R$79.99</p>
+          </di>
+          <di class="text-right mr-4">
+            <p class="text-2xl font-extrabold">R$69.99</p>
+          </di>
+        </div>
+      </div>
+
+      <div class="show-more flex justify-center items-center">
+        <a href="#">
+          <button
+            class="btn flex justify-center items-center text-xl font-extrabold px-4 py-8"
+          >
+            Show more
+          </button>
+        </a>
+      </div>
+    </div>
+    <!--/ Ofertas diárias-->
+
+    <!-- Chamada da apresentação -->
+    <div class="container flex items-center justify-center fadeInDown">
+      <div
+        class="mt-16 call-apres drop-shadow-lg rounded-md grid grid-gap-4 grid-cols-2"
+      >
+        <div class="flex items-center text-right mx-10">
+          <div class="text-2xl text-white font-extrabold">
+            Tudo que é bem feito, não é feito por acaso ...
+          </div>
+        </div>
+
+        <div class="rounded-r-md truncate">
+          <img src="../img/restaurante.jpg" class="w-full" />
+        </div>
+      </div>
+    </div>
+    <!--/ Chamada da apresentação -->
+
     <!-- Pontos da Empresa -->
     <div class="container pontos">
-      <div class="grid-16 titulo">
+      <div class="grid-16 titulo m-16">
         <h2>Pontos da Empresa</h2>
       </div>
       <div class="grid-1-3 pts">
@@ -237,7 +343,7 @@
     <!-- pontos empresa -->
 
     <!-- comentarios clientes -->
-    <div class="container coment rounded-md italic mb-32">
+    <div class="container coment rounded-md italic mb-32 mt-16">
       <div>
         <ul data-slide="comentarios">
           <li>
@@ -318,6 +424,7 @@
     </footer>
 
     <script src="../js/simple-slide.js"></script>
+    <script src="../js/hidden-content.js"></script>
     <script src="../js/simple-anime.js"></script>
     <script src="../js/script.js"></script>
   </body>
