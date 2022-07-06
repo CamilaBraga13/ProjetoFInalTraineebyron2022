@@ -9,7 +9,6 @@ html {
   top: 0;
   background: #d44d4d;
   width: 100%;
-  position: sticky;
   padding: 15px 0;
   z-index: 10;
 }
@@ -189,7 +188,7 @@ html {
   transition: transform 0.8s, opacity 0.8s;
 }
 
-/* CONTATO */
+/* CONTATO
 
 .img-contato {
   width: 100%;
@@ -209,6 +208,11 @@ html {
   font-weight: bolder;
 
 }
+.contat-f {
+  z-index: 1;
+  height: 300px;
+}
+
 .img-contato p:after {
   content: "";
   display: block;
@@ -221,6 +225,7 @@ html {
 .form {
   display: inline-block;
   width: 200px;
+  z-index: 10;
 }
 
 .contato_form {
@@ -285,5 +290,5 @@ html {
 .teste {
   background: blue;
   height: 500px;
-}
+} */
 
