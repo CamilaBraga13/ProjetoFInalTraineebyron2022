@@ -80,3 +80,5 @@ window.SimpleSlide = class {
       this.activateSlide(this.items[0]);
   }
 };
+
+

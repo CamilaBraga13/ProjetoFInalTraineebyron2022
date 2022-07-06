@@ -35,3 +35,4 @@ if (window.SimpleAnime) {
 
   $this.text(linkText);
 });​ */
+
