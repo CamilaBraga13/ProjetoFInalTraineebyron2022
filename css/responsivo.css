@@ -227,7 +227,7 @@
 
 
   .pontos {
-    height: 670px;
+    height: 690px;
   }
 
   .pts {
@@ -261,6 +261,7 @@
   /* CONTATO.HTML */
   .img-contato p {
     font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .form-contato {
@@ -316,6 +317,17 @@
     width: 300px;
   }
 
+  .sobre img {
+    margin-top: 160px;
+  }
+
+  .last-sobre {
+    margin-top: 100px;
+  }
+  .last-sobre img{
+    margin-top: 100px;
+  }
+  
   
 
   

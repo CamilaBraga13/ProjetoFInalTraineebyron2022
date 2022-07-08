@@ -50,10 +50,10 @@ html {
 }
 
 .titulo {
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-bottom: 20px;
+  /* font-size: 30px; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* text-align: center; */
+  /* margin-bottom: 20px; */
   color: #d44d4d;
 }
 
@@ -347,14 +347,14 @@ html {
   font-weight: bolder;
 }
 
-.img-contato p:after {
+/* .img-contato p:after {
   content: "";
   display: block;
   width: 200px;
   height: 3px;
   background: #ffffff;
   margin: 5px auto 10px auto;
-}
+} */
 
 .contato {
   height: 470px;
