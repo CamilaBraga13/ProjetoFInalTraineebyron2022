@@ -1,6 +1,3 @@
-descrição do projeto final
-
-
 # Índice
 
 
