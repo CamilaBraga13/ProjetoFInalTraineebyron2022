@@ -22,7 +22,7 @@ descrição do projeto final
 - Node Js
 
 ---
-                                        ![byron](/img/byron.png)
+![byron](/img/byron.png)
 ---
 
 🚀 **Desenvolvido por Camila Braga, e por Matheus Franco**
