@@ -164,6 +164,32 @@ html {
   width: 800px;
 }
 
+/* MENU */
+
+.cardapio {
+  background-color: #ff5f5f6c;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.margem-cardapio {
+  border: #000000;
+  border-style: double;
+}
+
+.cardapio li h2 {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.cardapio li h3 {
+  font-weight: 600;
+  padding: 6px;
+}
+
+.cardapio li p {
+  padding-bottom: 3px;
+}
+
 /* JAVASCRIPT */
 
 /* primeiro nav */
