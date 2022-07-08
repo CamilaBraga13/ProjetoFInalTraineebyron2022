@@ -3,7 +3,7 @@ descrição do projeto final
 
 # Índice
 
-![byron](/img/byron.png)
+
 
 - [Sobre](#-sobre)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
@@ -21,6 +21,8 @@ descrição do projeto final
 - TailwindCSS
 - Node Js
 
+---
+![byron](/img/byron.png)
 ---
 
 🚀 **Desenvolvido por Camila Braga, e por Matheus Franco**
