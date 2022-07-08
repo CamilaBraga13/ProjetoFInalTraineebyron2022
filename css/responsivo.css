@@ -1,4 +1,4 @@
-@media only screen and (min-width: 998px){
+@media only screen and (min-width: 980px){
   .nav-mb{
     visibility: hidden;
     width: 0;
@@ -13,7 +13,7 @@
 }
 
 /* ESTILO PARA TABLET */
-@media only screen and (min-width: 788px) and (max-width: 999px) {
+@media only screen and (min-width: 788px) and (max-width: 979px) {
 
 .header {
   height: 80px;
