@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/grid.css" />
-  <link rel="stylesheet" href="../css/responsivo.css">
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsivo.css">
 
 
   <script>
@@ -25,14 +25,41 @@
 <body>
   <header class="header drop-shadow-lg">
     <div class="container">
-      <a href="home.html" class="grid-4 logo">LOGO</a>
-      <nav class="grid-12 navbar">
-        <ul>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-      </nav>
+      <div class="nav-pc">
+        <a href="home.html" class="grid-4 logo">LOGO</a>
+        <nav class="grid-12 navbar">
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-mb">
+        <nav>
+          <div class="navbar-h">
+            <div class="container nav-container">
+              <div>
+                <h1>logo</h1>
+              </div>
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+              <div class="menu-items ">
+                <a href="menu.html">Menu</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
     </div>
   </header>
 
@@ -51,7 +78,18 @@
       </div>
     </div>
 
-    <div>
+    <!-- <div>
+
+      <div class="grid-10 hs box-sobre">
+        <h1>Cuidado</h1>
+        <p>O primeiro e mais importante ensinamento que nosso fundador nos ensinou foi <i>"devemos tratar todos os clientes como se fossem nossa própria família"</i>, assim, todos os dias buscamos sempre fazer tudo com o maior cuidado, fazendo sempre o nosso melhor, para que nossos clientes saiam daqui mais felizes do que quando entraram.</p>
+      </div>
+      <div class="grid-6 igm">
+        <img src="../img/sobre-2.jpg" alt="">
+      </div>
+    </div> -->
+    <div class="coment-resp " id="parent">
+
       <div class="grid-6 igm">
         <img src="../img/sobre-2.jpg" alt="">
       </div>
@@ -59,14 +97,15 @@
         <h1>Cuidado</h1>
         <p>O primeiro e mais importante ensinamento que nosso fundador nos ensinou foi <i>"devemos tratar todos os clientes como se fossem nossa própria família"</i>, assim, todos os dias buscamos sempre fazer tudo com o maior cuidado, fazendo sempre o nosso melhor, para que nossos clientes saiam daqui mais felizes do que quando entraram.</p>
       </div>
+
     </div>
 
     <div>
-      <div class="grid-9 hs last-sobre">
+      <div class="grid-10 hs last-sobre">
         <h1>Valores</h1>
         <p>Nós valorizamos as pequenas coisas, por isso buscamos garantir um ambiente familiar para que nosso restaurante seja um espaço onde todos se sintam em casa, onde podem se divertir, fazer festas e onde a união e a felicidade prevalecem.</p>
       </div>
-      <div class="grid-7 igm last-sobre">
+      <div class="grid-6 igm last-sobre">
         <img src="../img/sobre-3.jpg" alt="">
       </div>
     </div>
@@ -74,38 +113,36 @@
   </div>
 
 
-  <div>
-    <footer class=" footer">
-      <div class="container">
-        <div class="footer.contato grid-12">
-          <h2>Nossa história:</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            nostrum molestias vero nulla aspernatur, provident ea unde repellat
-            culpa tempora eos placeat deserunt voluptate sequi aut architecto
-            praesentium autem numquam?
-          </p>
-        </div>
-        <div class="footer_redes grid-4">
-          <h2>Redes Sociais:</h2>
-          <ul>
-            <li>
-              <a href="#"><img src="../img/redes-sociais/facebook 3.png" alt="Facebook" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="../img/redes-sociais/instagram 1.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="../img/redes-sociais/Vector.png" alt="" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
 
-    <script src="../js/simple-slide.js"></script>
-    <script src="../js/simple-anime.js"></script>
-    <script src="../js/script.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer.contato grid-12">
+        <h2>Nossa história:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          nostrum molestias vero nulla aspernatur, provident ea unde repellat.
+        </p>
+      </div>
+      <div class="footer_redes grid-4">
+        <h2 class="t-social">Redes Sociais:</h2>
+        <ul>
+          <li class="social">
+            <a href="#"><img src="../img/redes-sociais/facebook 3.png" alt="Facebook" /></a>
+          </li>
+          <li class="social">
+            <a href="#"><img src="../img/redes-sociais/instagram 1.png" alt="" /></a>
+          </li>
+          <li class="social">
+            <a href="#"><img src="../img/redes-sociais/Vector.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/simple-slide.js"></script>
+  <script src="../js/simple-anime.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

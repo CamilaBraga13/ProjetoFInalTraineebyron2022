@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/grid.css" />
-  <link rel="stylesheet" href="../css/responsivo.css">
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsivo.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script>
     document.documentElement.classList.add("js");
@@ -24,14 +26,41 @@
 <body>
   <header class="header drop-shadow-lg">
     <div class="container">
-      <a href="home.html" class="grid-4 logo">LOGO</a>
-      <nav class="grid-12 navbar">
-        <ul>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-      </nav>
+      <div class="nav-pc">
+        <a href="home.html" class="grid-4 logo">LOGO</a>
+        <nav class="grid-12 navbar">
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-mb">
+        <nav>
+          <div class="navbar-h">
+            <div class="container nav-container">
+              <div>
+                <h1>logo</h1>
+              </div>
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+              <div class="menu-items ">
+                <a href="menu.html">Menu</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
     </div>
   </header>
 
@@ -279,28 +308,25 @@
 
   <!-- Pontos da Empresa -->
   <div class="container pontos">
-    <div class="grid-16 titulo m-16">
+    <div class="grid-16 titulo ">
       <h2>Pontos da Empresa</h2>
     </div>
     <div class="grid-1-3 pts">
       <h2 class="pb-3"><b>Tradição</b></h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        at ut commodi sunt.
+        Somos um restaurante que segue as tradições a 3 gerações, e tratamos todos os clientes como se fossem nossa familia.
       </p>
     </div>
     <div class="grid-1-3 pts">
       <h2 class="pb-3"><b>Cuidado</b></h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius iste
-        suscipit reprehenderit blanditiis
+        Temos o maior cuidado no preparo e no atendimento, buscando levar o melhor de nós para vocês.
       </p>
     </div>
     <div class="grid-1-3 pts">
       <h2 class="pb-3"><b>Valores</b></h2>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aliquam
-        ipsa molestiae porro laboriosam.
+        Nós valorizamos as pequenas coisas, por isso buscamos garantir um ambiente familiar para todos.
       </p>
     </div>
   </div>
@@ -355,25 +381,23 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer.contato grid-12">
+      <div class="footer-contato grid-12">
         <h2>Nossa história:</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          nostrum molestias vero nulla aspernatur, provident ea unde repellat
-          culpa tempora eos placeat deserunt voluptate sequi aut architecto
-          praesentium autem numquam?
+          nostrum molestias vero nulla aspernatur, provident ea unde repellat.
         </p>
       </div>
       <div class="footer_redes grid-4">
-        <h2>Redes Sociais:</h2>
+        <h2 class="t-social">Redes Sociais:</h2>
         <ul>
-          <li>
+          <li class="social">
             <a href="#"><img src="../img/redes-sociais/facebook 3.png" alt="Facebook" /></a>
           </li>
-          <li>
+          <li class="social">
             <a href="#"><img src="../img/redes-sociais/instagram 1.png" alt="" /></a>
           </li>
-          <li>
+          <li class="social">
             <a href="#"><img src="../img/redes-sociais/Vector.png" alt="" /></a>
           </li>
         </ul>

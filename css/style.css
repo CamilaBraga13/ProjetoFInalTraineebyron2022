@@ -4,6 +4,7 @@ html {
 }
 
 /* COMEÇO HEADER */
+
 .header {
   position: sticky;
   top: 0;
@@ -26,6 +27,7 @@ html {
   text-align: right;
 }
 
+
 .navbar ul li {
   display: inline-block;
   margin-left: 40px;
@@ -35,6 +37,8 @@ html {
 .navbar ul li a {
   color: #ffffff;
 }
+
+
 
 /* FIM HEADER */
 
@@ -120,6 +124,7 @@ html {
   border-bottom: 2px solid #000000;
   display: block;
   padding: 10px;
+
 }
 /* FIM FOOTER */
 
@@ -372,9 +377,14 @@ html {
 .form-contato button {
   padding: 7px 15px;
   background: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border: 2px solid #000000 ;
-  margin-left: 150px;
+  margin-left: 130px;
+  transition: font-weight 0.2s,padding 0.2;
+}
+
+.form-contato button:hover {
+  font-weight: bold; 
 }
 
 .form-contato select {
@@ -385,7 +395,6 @@ html {
 
 .form-contato select:hover {
   border-color: #fd3636 ;
-
 }
 
 .info-contato {
@@ -437,29 +446,24 @@ html {
 .img-sobre {
   width: 100%;
   height: 150px;
-  background: url(../img/coment-bt.jpg) no-repeat center;
+  background: url(../img/5.jpg) no-repeat center;
   background-size: cover;
 }
 
+
 .img-sobre p{
-  padding-top: 50px;
+  
+  padding-top: 30px;
   font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
-  color: #d13b3b;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
   text-align: center;
   background:no-repeat center;
   background-size: cover;
   font-weight: bolder;
+  
 }
 
-.img-sobre p:after {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 3px;
-  background: #df2c2c88;
-  margin: 5px auto 10px auto;
-}
 
 .sobre h1 {
   font-size: 30px;
@@ -494,3 +498,5 @@ html {
 .last-sobre {
   height: 224px;
 }
+
+
