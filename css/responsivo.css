@@ -4,6 +4,11 @@
     width: 0;
     height: 0;
   }
+  .nav-mb img{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
 
 }
 
@@ -60,6 +65,9 @@
 
 /* ESTILO PARA MOBILE */
 @media only screen and (max-width: 787px){
+  body{
+    overflow-x:hidden;
+  }
 
   .header{
     height: 70px;
@@ -122,10 +130,10 @@
   .nav-container .checkbox {
     position: absolute;
     display: block;
-    height: 32px;
-    width: 32px;
-    top: 10px;
-    right: 20px;
+    height: 50px;
+    width: 50px;
+    top: 2px;
+    right: 5px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -167,14 +175,14 @@
   }
   
   .navbar-h .menu-items {
-    margin-top: -34px;
+    margin-top: -16px;
     margin-left: 124px;
     padding-top: 50px;
     /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
     background: #f5f4f4;
     height: 100vh;
     width: 80%;
-    transform: translate(150%);
+    transform: translatey(-150%);
     display: flex;
     flex-direction: column;    
     transition: transform 0.5s ease-in-out;
@@ -192,8 +200,9 @@
     font-weight: 500;
   }
   
-  .logo {
-    font-size: 10px;
+  .nav-mb img{
+    margin-top: -33px;
+    width: 200px;
   }
   
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -223,14 +232,17 @@
 
   .pts {
     height: 180px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid #d44d4d;
     box-shadow: 2px 2px 2px gray;
     padding-top: 10px;
   }
 
   .titulo {
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pts:hover {
@@ -299,13 +311,18 @@
   /* SOBRE */
 
   .sobre {
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
   }
+
+  
 
   
 
   /* FOOTER */
   .footer {
+    /* width: 400px; */
     height: 160px;
     padding: 5px 5px;
   }
