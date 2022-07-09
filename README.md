@@ -18,10 +18,11 @@
 ![byron](/img/byron.png)
 ---
 ## 💡 Como utilizar ?
+#### Para clonar o repositório pelo terminal utilize a seguinte linha de comando : 
 ```
 $ git clone https://github.com/CamilaBraga13/ProjetoFInalTraineebyron2022.git
 ```
-#### Ou pelo botao **_code_**, na barra de opções do github, e baixar o projeto como um arquivo _.zip_
+#### Para baixar todos os arquivos pelo _Github_, utilize o botao **_code_**, na barra de opções do github.
 ---
 
 
