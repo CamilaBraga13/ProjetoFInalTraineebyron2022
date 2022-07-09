@@ -1,4 +1,4 @@
-@media only screen and (min-width: 980px){
+@media only screen and (min-width: 1023px){
   .nav-mb{
     visibility: hidden;
     width: 0;
@@ -13,7 +13,7 @@
 }
 
 /* ESTILO PARA TABLET */
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+@media only screen and (min-width: 788px) and (max-width: 1023px) {
 
 .header {
   height: 80px;
@@ -33,6 +33,10 @@
 }
 
 /* contato */
+.img-contato p{
+  padding-top: 30px;
+}
+
 .form-contato button {
   margin-left: 50px;
 }
