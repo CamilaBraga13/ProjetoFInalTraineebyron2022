@@ -1,9 +1,6 @@
+# 🧑‍🍳Le Restaurant
 
-
-# Índice
-
-- [Sobre](#-sobre)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+![banner](/img/banner_readme.jpeg)
 
 ## 📄Sobre
 
@@ -20,4 +17,18 @@
 
 ---
 
-🚀 **Desenvolvido por Camila Braga, e por Matheus Franco**
+## 💡 Como utilizar ?
+
+#### Para clonar o repositório pelo terminal, utilize a seguinte linha de comando :
+
+```
+$ git clone https://github.com/CamilaBraga13/ProjetoFInalTraineebyron2022.git
+```
+
+#### Para baixar todos os arquivos pelo _Github_, utilize o botao **_code_**, na barra de opções do github e faça download do arquivo _.zip_.
+
+---
+
+## ![byron](/img/byron.png)
+
+🚀 **Desenvolvido por Camila Braga e por Matheus Franco**
