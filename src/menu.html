@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/style.css" />
-
+    <link rel="stylesheet" href="../css/responsivo.css" />
     <link rel="shortcut icon" href="../img/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <script>
       document.documentElement.classList.add("js");
@@ -23,16 +28,43 @@
   <body>
     <header class="header drop-shadow-lg">
       <div class="container">
-        <a href="home.html" class="grid-4 logo">
-          <img src="../img/logo.png" />
-        </a>
-        <nav class="grid-12 navbar">
-          <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-          </ul>
-        </nav>
+        <div class="nav-pc">
+          <a href="home.html" class="grid-4 logo"
+            ><img src="../img/logo.png"
+          /></a>
+          <nav class="grid-12 navbar">
+            <ul>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-mb">
+          <nav>
+            <div class="navbar-h">
+              <div class="container nav-container">
+                <div>
+                  <a href="home.html" class="grid-4 logo"
+                    ><img src="../img/logo.png"
+                  /></a>
+                </div>
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>
+                <div class="menu-items">
+                  <a href="menu.html">Menu</a>
+                  <a href="contato.html">Contato</a>
+                  <a href="sobre.html">Sobre</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -70,7 +102,7 @@
     <!--/ INTRODUÇÃO -->
 
     <!--PRATOS SALGADOS-->
-    <div class="container menu-pratos">
+    <div class="container menu-pratos" data-anime="1200">
       <div>
         <h2 class="mb-6 mt-16 text-center font-extrabold text-4xl subtitulo">
           Pratos salgados
@@ -78,7 +110,7 @@
       </div>
 
       <div class="grid grid-cols-2 gap-4">
-        <div class="grid grid-rows-3 gap-4" style="height: 750px">
+        <div class="grid grid-rows-3 gap-4 pratos-fotos">
           <div class="row-span-2 truncate flex justify-center items-center">
             <img src="../img/pratoVertical.jpg" />
           </div>
@@ -87,7 +119,7 @@
           </div>
         </div>
 
-        <div class="grid grid-rows-3 gap-4" style="height: 750px">
+        <div class="grid grid-rows-3 gap-4 pratos-fotos">
           <div class="truncate flex justify-center items-center">
             <img src="../img/salgado02.jpg" />
           </div>
@@ -100,9 +132,9 @@
       <div class="cardapio mt-16 py-10">
         <div class="m-10 margem-cardapio">
           <ul
-            class="py-10 grid grid-cols-2 grid-rows-3 gap-8 flex items-center justify-center nowrap"
+            class="py-10 grid md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-4 gap-8 flex items-center justify-center nowrap"
           >
-            <li class="col-span-2 text-center">
+            <li class="md:col-span-2 text-center">
               <h2>Menu de Entradas</h2>
             </li>
 
@@ -115,69 +147,68 @@
             </li>
 
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Sanduíche Natural</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Rúcula, tomate seco, queijo de cabra & ovos</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
-
-            <li class="col-span-2 text-center">
-              <h3>Salada Rústica</h3>
+            <li class="md:col-span-2 text-center">
+              <h3>Carpaccio</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
-              <p>R$19.99</p>
+              <p>Carne vermelha, azeite de oliva, limão & alcaparras</p>
+              <p>R$39.99</p>
               <!--preco-->
             </li>
           </ul>
 
           <ul
-            class="py-10 pb-10 grid grid-cols-2 grid-rows-4 gap-4 flex items-center justify-center nowrap"
+            class="py-10 pb-10 grid md:grid-cols-2 md:grid-rows-4 grid-cols-1 grid-rows-7 gap-4 flex items-center justify-center nowrap"
           >
-            <li class="col-span-2 text-center">
+            <li class="md:col-span-2 text-center">
               <h2>Menu de Pratos Principais</h2>
             </li>
 
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Salmão grelhado</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
-              <p>R$19.99</p>
+              <p>Salmão & mix de legumes salteados</p>
+              <p>R$59.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Carré de cordeiro</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
-              <p>R$19.99</p>
+              <p>Carré, cebola caramelizada & purê de batatas</p>
+              <p>R$79.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Caldo de Abóbora</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
-              <p>R$19.99</p>
+              <p>Abóbora cabotia & torradas</p>
+              <p>R$39.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Filé Mignon</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
-              <p>R$19.99</p>
+              <p>Filé, legumes assados & fritas</p>
+              <p>R$59.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Fettuccine Alfredo</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
-              <p>R$19.99</p>
+              <p>Fettuccine, parmesão & manteiga</p>
+              <p>R$49.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Costela com fritas</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
-              <p>R$19.99</p>
+              <p>Costelas assadas ao molho barbecue com fritas</p>
+              <p>R$69.99</p>
               <!--preco-->
             </li>
           </ul>
@@ -194,7 +225,7 @@
         </h2>
       </div>
 
-      <div class="grid grid-cols-3 grid-rows-3 gap-4" style="height: 750px">
+      <div class="grid grid-cols-3 grid-rows-3 gap-4 pratos-fotos">
         <div class="row-span-2 truncate flex justify-center items-center">
           <img src="../img/doce01.jpg" />
         </div>
@@ -215,51 +246,51 @@
       <div class="cardapio mt-16 py-10">
         <div class="m-10 margem-cardapio">
           <ul
-            class="py-10 pb-10 grid grid-cols-2 grid-rows-4 gap-4 flex items-center justify-center nowrap"
+            class="py-10 pb-10 grid md:grid-cols-2 md:grid-rows-4 grid-cols-1 grid-rows-7 gap-4 flex items-center justify-center nowrap"
           >
-            <li class="col-span-2 text-center">
+            <li class="md:col-span-2 text-center">
               <h2>Menu de Sobremesas</h2>
             </li>
 
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Torta de Frutas Vermelhas</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Massa de pão-de-ló, creme especial e frutas frescas</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Tiramisù</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Biscoitos champagne, mascarpone & cacau em pó</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Torta campestre</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Massa podre, crème patissière e citrus</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Suflê de Banana e Canela</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Suflê & sorevete de baunilha</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Crème Brûlée</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Creme a base de leite, ovos, açúcar e baunilha</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Porção de mini churros</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Uma dúzia de churros & doce de leite</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
@@ -277,7 +308,7 @@
         </h2>
       </div>
 
-      <div class="grid grid-cols-3 grid-rows-3 gap-4" style="height: 750px">
+      <div class="grid grid-cols-3 grid-rows-3 gap-4 pratos-fotos">
         <div class="row-span-2 truncate flex justify-center items-center">
           <img src="../img/bebida01.jpg" />
         </div>
@@ -301,58 +332,58 @@
       <div class="cardapio my-16 py-10">
         <div class="m-10 margem-cardapio">
           <ul
-            class="py-10 pb-10 grid grid-cols-2 grid-rows-4 gap-4 flex items-center justify-center nowrap"
+            class="py-10 pb-10 grid md:grid-cols-2 md:grid-rows-4 grid-cols-1 grid-rows-8 gap-4 flex items-center justify-center nowrap"
           >
-            <li class="col-span-2 text-center">
+            <li class="md:col-span-2 text-center">
               <h2>Menu de Bebidas</h2>
             </li>
 
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Caipirinha</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Cachaça, limão, açúcar & gelo</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Piña Colada</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Rum, leite de coco & suco de abacaxi</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Dry Martini</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Gelo, gim & vermute</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Negroni</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Gim, Campari, vermute tinto & laranja</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Margarita</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Tequila, suco de limão & licor de laranja</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
             <li class="text-center">
-              <h3>Salada Rústica</h3>
+              <h3>Hanky Panky</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>London Dry Gin, vermute doce & Fernet</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
-            <li class="col-span-2 text-center">
-              <h3>Salada Rústica</h3>
+            <li class="md:col-span-2 text-center">
+              <h3>Mojito</h3>
               <!--nome do prato-->
-              <p>Alface, agrião, tomate seco, queijo de cabra & noz-pecã</p>
+              <p>Rum branco, açúcar, hortelã, limão & água gaseificada</p>
               <p>R$19.99</p>
               <!--preco-->
             </li>
@@ -364,29 +395,27 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer.contato grid-12">
+        <div class="footer-contato grid-12">
           <h2>Nossa história:</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            nostrum molestias vero nulla aspernatur, provident ea unde repellat
-            culpa tempora eos placeat deserunt voluptate sequi aut architecto
-            praesentium autem numquam?
+            nostrum molestias vero nulla aspernatur, provident ea unde repellat.
           </p>
         </div>
         <div class="footer_redes grid-4">
-          <h2>Redes Sociais:</h2>
+          <h2 class="t-social">Redes Sociais:</h2>
           <ul>
-            <li>
+            <li class="social">
               <a href="#"
                 ><img src="../img/redes-sociais/facebook 3.png" alt="Facebook"
               /></a>
             </li>
-            <li>
+            <li class="social">
               <a href="#"
                 ><img src="../img/redes-sociais/instagram 1.png" alt=""
               /></a>
             </li>
-            <li>
+            <li class="social">
               <a href="#"
                 ><img src="../img/redes-sociais/Vector.png" alt=""
               /></a>
@@ -397,6 +426,7 @@
     </footer>
 
     <script src="../js/simple-slide.js"></script>
+    <script src="../js/hidden-content.js"></script>
     <script src="../js/simple-anime.js"></script>
     <script src="../js/script.js"></script>
   </body>

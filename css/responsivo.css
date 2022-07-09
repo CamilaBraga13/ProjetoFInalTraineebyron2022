@@ -1,84 +1,82 @@
-@media only screen and (min-width: 980px){
-  .nav-mb{
+@media only screen and (min-width: 980px) {
+  .nav-mb {
     visibility: hidden;
     width: 0;
     height: 0;
   }
-  .nav-mb img{
+  .nav-mb img {
     visibility: hidden;
     width: 0;
     height: 0;
   }
-
 }
 
 /* ESTILO PARA TABLET */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
-
-.header {
-  height: 80px;
-}
-/* home */
-.pts p {
+  .header {
+    height: 80px;
+  }
+  /* home */
+  .pts p {
     font-size: 17px;
+  }
 
-}
+  .pts {
+    box-shadow: 2px 2px 2px gray;
+  }
 
-.pts {
-  box-shadow: 2px 2px 2px gray;
-}
+  .pts:hover {
+    box-shadow: 2px 2px 2px gray;
+  }
 
-.pts:hover {
-  box-shadow: 2px 2px 2px gray;
-}
+  /* contato */
+  .form-contato button {
+    margin-left: 50px;
+  }
 
-/* contato */
-.form-contato button {
-  margin-left: 50px;
-}
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
 
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .nav-mb {
+    visibility: hidden;
+  }
 
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%; 
-  width:100%;
-  position:absolute;
-}
-.nav-mb{
-  visibility: hidden;
- } 
+  .sobre p {
+    font-size: 20px;
+    font-weight: lighter;
+  }
 
- .sobre p{
-  font-size: 20px;
-  font-weight: lighter;
- }
-
+  .pratos-fotos {
+    height: 600px;
+  }
 }
 /* FIM ESTILO PARA TABLET */
 
 /* ESTILO PARA MOBILE */
-@media only screen and (max-width: 787px){
-  body{
-    overflow-x:hidden;
+@media only screen and (max-width: 787px) {
+  body {
+    overflow-x: hidden;
   }
 
-  .header{
+  .header {
     height: 70px;
   }
 
-  .logo{
+  .logo {
     font-size: 20px;
-  
   }
-  
- 
+
   .container {
     max-width: 1050px;
     width: 90%;
@@ -93,22 +91,22 @@
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
   }
-  
+
   .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 62px;
   }
-  
+
   .navbar-h .menu-items {
     display: flex;
   }
-  
+
   .navbar-h .nav-container li {
     list-style: none;
   }
-  
+
   .navbar-h .nav-container a {
     text-decoration: none;
     color: #0e2431;
@@ -116,17 +114,17 @@
     font-size: 1.2rem;
     padding: 0.7rem;
   }
-  
-  .navbar-h .nav-container a:hover{
-      font-weight: bolder;
+
+  .navbar-h .nav-container a:hover {
+    font-weight: bolder;
   }
-  
+
   .nav-container {
     display: block;
     position: relative;
     height: 60px;
   }
-  
+
   .nav-container .checkbox {
     position: absolute;
     display: block;
@@ -138,7 +136,7 @@
     opacity: 0;
     cursor: pointer;
   }
-  
+
   .nav-container .hamburger-lines {
     display: block;
     height: 26px;
@@ -151,7 +149,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .nav-container .hamburger-lines .line {
     display: block;
     height: 4px;
@@ -159,21 +157,21 @@
     border-radius: 10px;
     background: #000000;
   }
-  
+
   .nav-container .hamburger-lines .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
   }
-  
+
   .nav-container .hamburger-lines .line2 {
     transition: transform 0.2s ease-in-out;
   }
-  
+
   .nav-container .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
-  
+
   .navbar-h .menu-items {
     margin-top: -16px;
     margin-left: 124px;
@@ -184,47 +182,45 @@
     width: 80%;
     transform: translatey(-150%);
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     transition: transform 0.5s ease-in-out;
     text-align: center;
   }
-  
-  .navbar-h .menu-items a{
+
+  .navbar-h .menu-items a {
     margin-top: 20px;
   }
-
 
   .navbar-h .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
   }
-  
-  .nav-mb img{
+
+  .nav-mb img {
     margin-top: -33px;
     width: 200px;
   }
-  
+
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   }
-  
+
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
   }
-  
+
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
-  
+
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
-  
-  .nav-container input[type="checkbox"]:checked ~ .logo{
+
+  .nav-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
-
 
   .pontos {
     height: 690px;
@@ -251,12 +247,11 @@
 
   .coment {
     margin-bottom: 20px;
-    text-align: center ;
+    text-align: center;
     padding: 20px 65px;
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
   }
-
 
   /* CONTATO.HTML */
   .img-contato p {
@@ -271,7 +266,7 @@
   }
 
   .form-contato select:hover {
-    border-color: #fd3636 ;
+    border-color: #fd3636;
   }
 
   .form-contato button {
@@ -284,30 +279,27 @@
   .info-contato {
     padding-top: 20px;
     margin-left: 80px;
-    
   }
 
-  .map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-  }
-  
-  .map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%; 
-    width:100%;
-    position:absolute;
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
   }
 
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 
   .contato-bt {
     margin-top: 230px;
     height: 150px;
   }
-
 
   /* SOBRE */
 
@@ -324,13 +316,9 @@
   .last-sobre {
     margin-top: 100px;
   }
-  .last-sobre img{
+  .last-sobre img {
     margin-top: 100px;
   }
-  
-  
-
-  
 
   /* FOOTER */
   .footer {
@@ -339,46 +327,48 @@
     padding: 5px 5px;
   }
 
-  .footer_redes{
+  .footer_redes {
     width: 140px;
     height: 60px;
     margin-left: 0px;
   }
-  
-
 
   .footer_redes ul li {
     display: inline-block;
   }
-  
+
   .footer_redes ul li a {
     border-bottom: none;
     display: block;
     padding: 5px 5px;
     border-bottom: 2px solid #000000;
   }
-  
+
   .t-social {
     visibility: hidden;
   }
-  
+
   .social {
     width: 40px;
-    
-    
   }
   #parent {
     display: flex;
     flex-direction: column-reverse;
   }
-  .texto-r p{
+  .texto-r p {
     text-align: left;
   }
   .igm {
     margin-top: -28px;
   }
 
+  .call-apres {
+    height: 240px;
+  }
+
+  .pratos-fotos {
+    height: 375px;
+  }
 }
 
 /* FIM ESTILO PARA MOBILE */
-
