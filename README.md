@@ -21,7 +21,7 @@
 ```
 $ git clone https://github.com/CamilaBraga13/ProjetoFInalTraineebyron2022.git
 
-Ou pelo botao **code**, na barra de opções do github, e baixar o projeto como um arquivo _.zip_
+Ou pelo botao __code__, na barra de opções do github, e baixar o projeto como um arquivo _.zip_
 ```
 
 
