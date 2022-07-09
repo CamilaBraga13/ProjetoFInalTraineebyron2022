@@ -1,4 +1,4 @@
-# 🔥 Le Restaurant 
+# 🔥 🧑‍🍳👨‍🍳 Le Restaurant 
 ![banner](/img/banner_readme.jpeg)
 
 ## 📄Sobre
