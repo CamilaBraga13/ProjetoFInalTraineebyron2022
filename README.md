@@ -1,5 +1,5 @@
 # Índice
-![GIF](/img/giphy.mp4)
+![GIF](/img/giphy.gif)
 
 
 - [Sobre](#-sobre)
